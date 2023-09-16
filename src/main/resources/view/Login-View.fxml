@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="378.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fx:id="pane" fitHeight="400.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/long-term-car-rental.jpeg" />
+         </image>
+      </ImageView>
+      <Pane id="form" fx:id="pane1" layoutX="14.0" layoutY="5.0" prefHeight="376.0" prefWidth="312.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: transparent; -fx-border-style: solid;">
+         <children>
+            <Label layoutX="106.0" layoutY="14.0" text="Log in">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="258.0" layoutY="130.0" size="25" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="INSIDE" text="" textAlignment="CENTER" wrappingWidth="18.971391677856445">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="259.0" layoutY="221.0" size="25" />
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="17.0" layoutY="288.0" onAction="#LoginMethod" prefHeight="30.0" prefWidth="278.0" style="-fx-background-color: #3052dd; -fx-background-radius: 7px; -fx-border-radius: 7px;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXRadioButton layoutX="89.0" layoutY="253.0" text="  Remember me" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <selectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </selectedColor>
+            </JFXRadioButton>
+            <Label layoutX="48.0" layoutY="344.0" text="Label" />
+            <Label layoutX="39.0" layoutY="345.0" text="You Don'thave Account  ? " textFill="WHITE" />
+            <JFXButton fx:id="signupButton" layoutX="193.0" layoutY="338.0" onAction="#signupMethod" prefHeight="30.0" prefWidth="82.0" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="usernameText" focusColor="WHITE" labelFloat="true" layoutX="39.0" layoutY="97.0" prefHeight="38.0" prefWidth="247.0" promptText="Username" style="-fx-text-fill: white; -fx-text-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="passwordText" focusColor="WHITE" labelFloat="true" layoutX="42.0" layoutY="187.0" prefHeight="38.0" prefWidth="247.0" promptText="Password" style="-fx-text-fill: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXPasswordField>
+         </children>
+      </Pane>
+      <JFXTextField />
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="545.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.update.CustomerUpdateViewController">
+   <children>
+      <JFXTextField fx:id="addessText" labelFloat="true" layoutX="53.0" layoutY="234.0" prefHeight="38.0" prefWidth="410.0" promptText="Enter Address" />
+      <JFXTextField fx:id="mobileText" labelFloat="true" layoutX="55.0" layoutY="299.0" prefHeight="38.0" prefWidth="243.0" promptText="Enter Mobile No" />
+      <JFXTextField fx:id="nameText" labelFloat="true" layoutX="53.0" layoutY="169.0" prefHeight="38.0" prefWidth="410.0" promptText="Enter Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="nicText" labelFloat="true" layoutX="55.0" layoutY="365.0" prefHeight="38.0" prefWidth="243.0" promptText="Enter NIC Number" />
+      <Label layoutX="91.0" layoutY="35.0" text="Customer Update Form">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="39.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="432.0" onAction="#updateCustomer" prefHeight="37.0" prefWidth="423.0" style="-fx-background-color: #3052dd; -fx-background-radius: 7px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="43.0" layoutY="489.0" onAction="#backButton" text="Go Back">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/download%20(3).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="302.6000061035156" endY="-7.62939453125E-6" layoutX="165.0" layoutY="86.0" startX="-100.0" />
+      <JFXButton layoutX="327.0" layoutY="119.0" onAction="#searchCustomer" style="-fx-background-color: #3052dd; -fx-background-radius: 7px;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="idText" labelFloat="true" layoutX="124.0" layoutY="119.0" promptText="Enter Customer ID" />
+   </children>
+</AnchorPane>

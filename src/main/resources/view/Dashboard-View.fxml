@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="765.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardViewController">
+   <left>
+      <Pane prefHeight="586.0" prefWidth="226.0" style="-fx-background-color: #003333; -fx-border-radius: 20px;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="5.0" layoutY="14.0" prefHeight="54.0" prefWidth="216.0" text="DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DASHBOARD" scaleY="0.9" text="" />
+               </graphic>
+            </Label>
+            <Separator layoutX="15.0" layoutY="88.0" prefWidth="200.0" />
+            <Separator layoutX="13.0" layoutY="159.0" prefWidth="200.0" />
+            <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="91.0" onAction="#gotoUserView" prefHeight="63.0" prefWidth="229.0" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="11.0" layoutY="231.0" prefWidth="200.0" />
+            <JFXButton buttonType="RAISED" layoutX="-1.0" layoutY="234.0" onAction="#gotoCarView" prefHeight="73.0" prefWidth="229.0" text="Car" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="13.0" layoutY="306.0" prefWidth="200.0" />
+            <JFXButton buttonType="RAISED" layoutX="-1.0" layoutY="309.0" onAction="#gotoRentView" prefHeight="73.0" prefWidth="229.0" text="Rent" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="14.0" layoutY="381.0" prefWidth="200.0" />
+            <JFXButton buttonType="RAISED" layoutY="384.0" onAction="#gotoCarCategoryView" prefHeight="73.0" prefWidth="229.0" text="Car Catagory" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="13.0" layoutY="456.0" prefWidth="200.0" />
+            <JFXButton buttonType="RAISED" layoutY="459.0" onAction="#gotoLogin" prefHeight="73.0" prefWidth="229.0" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="21.0" layoutY="546.0" text="Label" />
+            <FontAwesomeIconView glyphName="USER" layoutX="46.0" layoutY="129.0" size="20" />
+            <FontAwesomeIconView glyphName="CAR" layoutX="39.0" layoutY="275.0" size="20" />
+            <FontAwesomeIconView glyphName="CAR" layoutX="23.0" layoutY="445.0" size="20" text="" />
+            <FontAwesomeIconView glyphName="CAR" layoutX="26.0" layoutY="425.0" size="20" />
+            <FontAwesomeIconView glyphName="CAR" layoutX="15.0" layoutY="435.0" size="20" />
+            <FontAwesomeIconView glyphName="MONEY" layoutX="42.0" layoutY="354.0" size="20" text="" />
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="39.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/img.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="4.0" layoutY="165.0" onAction="#gotoCustomerView" prefHeight="70.0" prefWidth="229.0" text="Customer" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="USERS" layoutX="42.0" layoutY="207.0" size="20" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <ImageView fitHeight="582.0" fitWidth="763.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../image/download%20(5).png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
